@@ -1,0 +1,377 @@
+<html>
+
+<head>
+    <title>SportsWear</title>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        * {
+            font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #F5F5F5;
+        }
+        
+        #produtos {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: flex;
+        }
+        
+        .produto-sozinho {
+            width: 32%;
+            margin-right: 1%;
+            border: 3px solid #ccc;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .produto-sozinho img {
+            max-width: 100%;
+        }
+        
+        .produto-sozinho p {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+        
+        .produto-sozinho a {
+            text-decoration: none;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            display: block;
+            padding: 7px 0;
+        }
+        
+        h2 {
+            background-color: rgb(61, 63, 145);
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .produto-sozinho {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+        
+        .nikeproduto {
+            width: auto;
+            height: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+        }
+        
+        .produto-sozinho b {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            color: #4B4B4B;
+        }
+        
+        .logosmarcas {
+            position: relative;
+            text-align: center;
+            background-color: #F5F5F5;
+        }
+        
+        .marcas {
+            font-size: 18px;
+            padding: 10px;
+            color: #4B4B4B;
+            width: auto;
+            height: 60px;
+            display: inline-block;
+        }
+        
+        .parcelas {
+            font-size: 10px;
+        }
+        
+        h2 {
+            background-color: white;
+            padding: 10px 0;
+            text-align: center;
+            color: black;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .produto-sozinho {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+        
+        .imagens {
+            width: 100%;
+            height: 300px;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        
+        .airmaxday {
+            width: 100%;
+        }
+        
+        .produtospromocao {
+            background-color: #F5F5F5;
+        }
+        
+        .sobre {
+            display: inline-flex;
+            text-align: center;
+            background-color: black;
+            width: 100%;
+            height: 399px;
+            color: white;
+        }
+        
+        .descricao {
+            text-align: center;
+            margin-top: 130px;
+            margin-bottom: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 17px;
+        }
+        
+        .sw {
+            width: 400px;
+        }
+        
+        .video {
+        width: 100%;
+        }
+
+        .textofooter{
+            background-color: #000;
+            color: white;
+            text-align: center;
+            display: flex;
+        }
+
+
+        .pfooter{
+           
+            font-size: 22px;
+            font-weight: bold;
+            padding: 60px;
+            margin-left: 25px ;
+        }
+       
+     .footerp{
+        display: inline-block;
+        
+
+     }
+            
+     .complementos{
+        font-family: FuturaPT;
+        display: block;
+        font-size: 20px;
+        text-decoration: none;
+        color: #C0C0C0;
+        opacity: 0.7;
+     }
+
+     .redessociais{
+        font-family: FuturaPT;
+        font: size 20px;
+        display: block;
+        color: #C0C0C0;
+        opacity: 0.7;
+     }
+     .pagamentos{
+        padding-left: 10px;
+        height: 170px;
+        width:350px;
+     }
+    .comprarr{
+font-size: 20px;
+
+    }
+       
+      
+    </style>
+</head>
+
+
+<body>
+    <!--Menu-->
+    <nav>
+        <a class="logo" href="index.html">SportsWear</a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="nike.html">Nike</a></li>
+            <li><a href="adidas.html">Adidas</a></li>
+            <li><a href="puma.html">Puma</a></li>
+            <li>
+                <a href="#"><img src="../imagenstenis/ajuda.png" width="25px"></a>
+            </li>
+            <li>
+                <a href="/php/entrar.php"><img src="../imagenstenis/login.png" width="25px"></a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!--Vídeo Principal-->
+    <video class="video" loop="" autoplay="" muted="" preload="none"><source type="video/mp4" src="https://nikevideo.nike.com/media/v1/pmp4/static/clear/72451143001/1ee519ad-3408-4359-8d58-92f8c6d66734/03e6326f-1f23-4bd6-b901-b4ad3d16176d/main.mp4"></video>
+    <source type="video/mp4" src="https://nikevideo.nike.com/media/v1/pmp4/static/clear/72451143001/1ee519ad-3408-4359-8d58-92f8c6d66734/03e6326f-1f23-4bd6-b901-b4ad3d16176d/main.mp4">
+
+    <!--Produtos-->
+
+    <h2 class="produtospromocao">Produtos Na Promoção</h2>
+    <div id="produtos">
+
+    </div>
+
+    <!--Marcas-->
+
+    <div class="logosmarcas">
+        <form>
+            <a href="index.html"><img class="marcas" src="../imagenstenis/nike.png"></a>
+            <a href="nike.html"><img class="marcas" src="../imagenstenis/jordan.png"></a>
+            <a href="adidas.html"><img class="marcas" src="../imagenstenis/adidas.png"></a>
+            <a href="puma.html"> <img class="marcas" src="../imagenstenis/puma.png"></a>
+            
+        </form>
+    </div>
+
+    <div class="airmax">
+        <a href="../html/index.html"><img class="airmaxday" src="../imagenstenis/airmax.png"></a>
+    </div>
+
+    <div class="sobre">
+        <img class="sw" src="../imagenstenis/sw2.jpg">
+        <p class="descricao"> Introduzido por Chanel no começo do século 20, o sportswear retorna aos holofotes da moda para reforçar valores como praticidade e simplicidade.<br> Nossa meta como empressa é sempre trazer os melhores produtos e mais exclusivos para o seu estilo.<br>Estamos
+            começando nossa loja a pouco mais de um ano e já contamos com parcerias de marcar incríveis como Nike, Adidas e Puma.Estamos crescendo cada dia mais e trazendo produtos cada vez mais exclusivos e acessíveis para todos.</p>
+
+    </div>
+
+
+    <script>
+        /* Produtos */
+        const items = [{
+                    id: 0,
+                    nome: 'TÊNIS NIKE AIR MAX 97 BRANCO',
+                    valor: 'R$ 599,90 ',
+                    parcela: 'ou em 3x de R$199.96 ',
+                    nikeproduto: '../imagenstenis/nike.png ',
+                    img: '../imagenstenis/AIRMAX97BRANCO.jpg',
+                    quantidade: 0
+                }, {
+                    id: 7,
+                    nome: 'TÊNIS NIKE AIR JORDAN 4 RED THUNDER',
+                    valor: 'R$ 899,90 ',
+                    parcela: 'ou em 3x de R299,96 ',
+                    nikeproduto: '../imagenstenis/jordan.png ',
+                    img: '../imagenstenis/JORDAN4REDTHUNDER.jpg',
+                    quantidade: 0
+                }, {
+                    id: 4,
+                    nome: 'Tênis Adidas Nmd R1 Primeblue Preto',
+                    valor: 'R$ 599,90 ',
+                    parcela: 'ou em 3x de R$199,96 ',
+                    nikeproduto: '../imagenstenis/adidas.png ',
+                    img: '../imagenstenis/ADIDASNMDR1Primeblue.jpg',
+                    quantidade: 0
+                }, {
+                    id: 2,
+                    nome: 'Tênis Puma Rs-x Super Azul <br> &nbsp;',
+                    valor: 'R$499,90 ',
+                    parcela: 'ou em 3x de R$166,33 ',
+                    nikeproduto: '../imagenstenis/puma.png ',
+                    img: '../imagenstenis/PumaRs-xSuperAzul.jpg',
+                    quantidade: 0
+                },
+
+
+
+
+            ]
+            /* Inicializar a loja e mostrar os produtos */
+        inicializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');
+            items.map((val) => {
+                containerProdutos.innerHTML += `
+                
+            <div class="produto-sozinho">
+                <img src="` + val.img + `" />
+                <p>` + val.nome + `</p>
+                <b>` + val.valor + `</b>
+                <p class="parcelas">` + val.parcela + `</p>
+                <img class="nikeproduto" src="` + val.nikeproduto + `" />
+                <a class="comprarr" key="` + val.id + `" href="#">Comprar</a>
+                </div>
+                
+
+                `;
+            })
+        }
+        inicializarLoja();
+
+        
+    </script>
+
+
+</body>
+<footer>
+<div class="textofooter">
+    <div class="pfooter">
+        <p class="footerp">MARCAS</p>
+        <br>
+  <a class="complementos" href="../html/nike.html">Nike</a>
+  <a class="complementos" href="../html/adidas.html">Adidas</a>
+  <a class="complementos" href="../html/puma.html">Puma</a>
+    
+</div>
+<div class="pfooter">
+    <p class="footerp">INFORMAÇÕES</p>
+    <br>
+    <a class="complementos" href="../html/duvidas.html">Duvidas Frequentes</a>
+    <a class="complementos" href="../html/duvidas.html">Contato</a>
+    </div>
+    <div class="pfooter">
+        <p class="footerp">REDES SOCIAIS</p>
+   <br>
+        <a class="redessociais" href="https://www.instagram.com/sportswearbrasill/"target="_blank">SportsWear</a>
+        <a class="redessociais" href="https://www.instagram.com/_pedrosolla_/"target="_blank">Pedro Solla</a>
+        <a class="redessociais" href="https://www.instagram.com/arthurr_henriquee/" target="_blank">Arthur Henrique</a>
+        <a class="redessociais" href="https://www.instagram.com/hiroibr/"target="_blank">Cayo Cesar</a>
+        </div>
+<br>
+<div class="pfooter">
+    <p class="footerp">PAGAMENTOS</p>
+    <br>
+    <img class="pagamentos" src="../imagenstenis/pagamentos.png">
+    </div>
+
+    
+    
+</div>
+</footer>
+
+</html>

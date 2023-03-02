@@ -1,0 +1,306 @@
+<html>
+
+<head>
+    <title>SportsWear</title>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css" />
+
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #produtos {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .produto-sozinho {
+            width: 32%;
+            margin-right: 1%;
+            border: 3px solid #ccc;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .produto-sozinho img {
+            max-width: 100%;
+        }
+        
+        .produto-sozinho p {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+        
+        .produto-sozinho a {
+            text-decoration: none;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            display: block;
+            padding: 7px 0;
+        }
+        
+        h2 {
+            background-color: #000;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .produto-sozinho {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+        
+        .nikeproduto {
+            width: auto;
+            height: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+        }
+        
+        .produto-sozinho b {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            color: #4B4B4B;
+        }
+        
+        .logosmarcas {
+            position: relative;
+            text-align: center;
+            background-color: #F5F5F5;
+        }
+        
+        .marcas {
+            font-size: 18px;
+            padding: 10px;
+            color: #4B4B4B;
+            width: auto;
+            height: 60px;
+            display: inline-block;
+        }
+        
+        .parcelas {
+            font-size: 10px;
+        }
+        .adidasbranco{
+            margin-top: 5px;
+            width: 70px;
+            height: 50px;
+        }
+        .comprarr{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!--Menu-->
+    <nav>
+        <a class="logo" href="index.html">SportsWear</a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="nike.html">Nike</a></li>
+            <li><a href="adidas.html">Adidas</a></li>
+            <li><a href="puma.html">Puma</a></li>
+            <li>
+                <a href="#"><img src="../imagenstenis/ajuda.png" width="25px"></a>
+            </li>
+            <li>
+                <a href="/php/entrar.php"><img src="../imagenstenis/login.png" width="25px"></a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <h2><img class="adidasbranco" src="../imagenstenis/adidasbranco.png"></h2>
+    <div id="produtos">
+
+    </div>
+    <!--produtos-->
+    <!--Marcas-->
+
+    <div class="logosmarcas">
+        <form>
+            <a href="index.html"><img class="marcas" src="../imagenstenis/nike.png"></a>
+            <a href="adidas.html"><img class="marcas" src="../imagenstenis/adidas.png"></a>
+            <a href="puma.html"> <img class="marcas" src="../imagenstenis/puma.png"></a>
+            <a href="index.html"><img class="marcas" src="../imagenstenis/jordan.png"></a>
+        </form>
+    </div>
+
+    <script>
+        const items = [{
+                id: 0,
+                nome: 'Chinelo Adidas Yeezy Slide Glow Green <br> &nbsp; ',
+                valor: 'R$ 849,90',
+                parcela: 'ou em 3x de R$283,3 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASYEEZYSLIDEGLOWGREEN.jpg',
+                quantidade: 0
+            }, {
+                id: 1,
+                nome: 'Chinelo Adidas Yeezy Slide Soot Marrom <br> &nbsp;',
+                valor: 'R$ 849,90 ',
+                parcela: 'ou em 3x de R$283,3 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASYEEZYSLIDESOOT.jpg',
+                quantidade: 0
+            }, {
+                id: 2,
+                nome: 'Tênis Adidas Nite Jogger Branco <br> &nbsp;',
+                valor: 'R$ 499,90 ',
+                parcela: 'ou em 3x de R$166,63 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASNITEJOGGER.jpg',
+                quantidade: 0
+            }, {
+                id: 3,
+                nome: ' TÊNIS ADIDAS NMD R1 PRETO <br> &nbsp;',
+                valor: 'R$ 649,90 ',
+                parcela: 'ou em 3x de R$216,63 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/adidasdobada.jpg',
+                quantidade: 0
+            }, {
+                id: 4,
+                nome: ' TÊNIS ADIDAS NMD R1 PRETO <br> &nbsp;',
+                valor: 'R$ 649,90 ',
+                parcela: 'ou em 3x de R$216,63 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/chinelopreto.jpg',
+                quantidade: 0
+            }, {
+                id: 5,
+                nome: 'TÊNIS ADIDAS NMD R1 STAR WARS BRANCO PRETO',
+                valor: 'R$ 699,90 ',
+                parcela: 'ou em 3x de R$233,3 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASNMDR1STARWARS.jpg',
+                quantidade: 0
+            }, {
+                id: 6,
+                nome: 'TÊNIS ADIDAS OZWEEGO W BRANCO <br> &nbsp;',
+                valor: 'R$ 549,90',
+                parcela: 'ou em 3x de R$183,3 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASOZWEEGOW.jpg',
+                quantidade: 0
+            }, {
+                id: 7,
+                nome: 'TÊNIS ADIDAS SUPERSTAR BRANCO <br> &nbsp;',
+                valor: 'R$ 499,90 ',
+                parcela: 'ou em 3x de R$166,63 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASUPERSTARBRANCO.jpg',
+                quantidade: 0
+            }, {
+                id: 8,
+                nome: 'TÊNIS ADIDAS SUPERSTAR BRANCO PRETO',
+                valor: 'R$ 499,90 ',
+                parcela: 'ou em 3x de R166,63 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASSUPERSTAR.jpg',
+                quantidade: 0
+            }, {
+                id: 9,
+                nome: 'TÊNIS ADIDAS SUPERSTAR PRETO BRANCO',
+                valor: 'R$ 499,90 ',
+                parcela: 'ou em 3x de R$166,63 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASUPERSTARPRETO.jpg',
+                quantidade: 0
+            }, {
+                id: 10,
+                nome: 'TÊNIS ADIDAS YEEZY BOOST 350 V2 _MONO ICE_ AZUL',
+                valor: 'R$ 1199,90 ',
+                parcela: 'ou em 3x de R$399,99 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASYEEZYBOOST350AZUL.jpg',
+                quantidade: 0
+            }, {
+                id: 11,
+                nome: 'TÊNIS ADIDAS YEEZY BOOST 350 V2 LUNDMARK BEGE',
+                valor: 'R$ 1199,90 ',
+                parcela: 'ou em 3x de R$399,99 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/ADIDASYEEZYBOOST350LUNDMARK.jpg',
+                quantidade: 0
+            }, {
+                id: 12,
+                nome: 'Tênis Yeezy Boost 380 Bege <br> &nbsp;',
+                valor: 'R$ 899,90 ',
+                parcela: 'ou em 3x de R$299,96 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/YeezyBoost380Bege.jpg',
+                quantidade: 0
+            }, {
+                id: 13,
+                nome: 'Tênis Adidas Yeezy Boost 700 V3 Amarelo <br> &nbsp;',
+                valor: 'R$ 749,90 ',
+                parcela: 'ou em 3x de R$249,96 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/AdidasYeezyBoost700Amarelo.jpg',
+                quantidade: 0
+            }, {
+                id: 14,
+                nome: 'YEEZY BOOST 700 V2 AMARELO <br> &nbsp;',
+                valor: 'R$ 769,90 ',
+                parcela: 'ou em 3x de R$256,63 ',
+                nikeproduto: '../imagenstenis/adidas.png ',
+                img: '../imagenstenis/YEEZYBOOST700AMARELO.jpg',
+                quantidade: 0
+            },
+
+
+
+
+        ]
+        inicializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');
+            items.map((val) => {
+                containerProdutos.innerHTML += `
+                
+            <div class="produto-sozinho">
+                <img src="` + val.img + `" />
+                <p>` + val.nome + `</p>
+                <b>` + val.valor + `</b>
+                <p class="parcelas">` + val.parcela + `</p>
+                <img class="nikeproduto" src="` + val.nikeproduto + `" />
+                <a class="comprarr" key="` + val.id + `" href="#">Comprar</a>
+                </div>
+                
+
+                `;
+            })
+        }
+        inicializarLoja();
+    </script>
+
+
+</body>
+
+</html>
